@@ -1,4 +1,7 @@
+provider "aws" {
+  region  = "us-east-1"    
 
+}
 # Create a tiny EC2 instance
 resource "aws_instance" "HelloEC2" {
   ami           = "ami-04b4f1a9cf54c11d0" 
