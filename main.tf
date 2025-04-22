@@ -1,17 +1,3 @@
-# Provider configuration
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
-
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
 
 # Create a tiny EC2 instance
 resource "aws_instance" "HelloEC2" {
