@@ -2,7 +2,7 @@
 # Create a tiny EC2 instance
 resource "aws_instance" "HelloEC2" {
   ami           = "ami-04b4f1a9cf54c11d0" 
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "EC2Instance"
